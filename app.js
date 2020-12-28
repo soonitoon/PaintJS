@@ -25,7 +25,9 @@ function stopPainting(){
 }
 
 function startPainting(){
-    painting = true;
+    if(!filling){
+        painting = true;
+    }
 }
 
 function onMouseMove(event){
